@@ -1,0 +1,106 @@
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+@import 'tailwindcss/utilities';
+
+#contentCenter {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#contentWrapper {
+    width: 100vw;
+    display: flex;
+    padding: 20px 0;
+    max-width: 1000px;
+}
+
+@media (min-width: 640px){
+    #contentWrapper {
+        padding: 20px 24px;
+    }
+}
+
+#widgetContainer {
+    width: 100%;
+    max-width: 310px;
+    margin-left: 24px;
+}
+
+@media (max-width: 999px){
+    #widgetContainer {
+        display: none;
+    }
+}
+
+#postContainer {
+    width: 100%;
+}
+
+@media (min-width: 1000px){
+    #postContainer {
+        max-width: 610px;
+    }
+}
+
+.post {
+    background-color: white;
+    width: 100%;
+    border: 1px solid rgba(0, 0, 0, 0.18);
+    height: 200px;
+    margin: 0 0 10px ;
+    border-radius: 4px;
+    display: flex;
+}
+
+@media (max-width: 640px){
+    .post {
+        border-radius: 0;
+        border: none;
+        border-top: 1px solid rgba(0, 0, 0, 0.18);
+        border-bottom: 1px solid rgba(0, 0, 0, 0.18);
+    }
+}
+
+.widget {
+    background-color: white;
+    width: 100%;
+    border: 1px solid rgba(0, 0, 0, 0.18);
+    height: 200px;
+    border-radius: 4px;
+}
+
+.postVotes {
+    width: 40px;
+    height: 100%;
+    border-radius: 4px 0 0 4px;
+    background-color: #f1f1f1;
+    font-size: 20px;
+    padding: 4px 4px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.postRating {
+    margin: 0 !important;
+    font-size: 13px;
+}
+
+.postHeader{
+    padding: 5px 0 0 9px;
+}
+
+.postHeader div {
+    display: flex;
+    align-items: center;
+}
+
+.postHeader b{
+    font-size: .8rem;
+}
+
+.postHeader p{
+    font-size: .7rem;
+    color: rgba(0, 0, 0, 0.6);
+}
